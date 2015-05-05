@@ -1,0 +1,27 @@
+{
+  "name": "stew",
+  "version": "0.0.1",
+  "description": "interesting stuff, mixed together",
+  "author": "Tad Thorley",
+  "homepage": "https://github.com/phaedryx/stew",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/phaedryx/stew.git"
+  },
+  "dependencies": {
+    "jquery": "~2.1",
+    "modernizr": "3.0.0-alpha.4",
+    "foundation-sites": "~5.5"
+  },
+  "devDependencies": {
+    "gulp": "~3.8",
+    "gulp-util": "~3.0",
+    "webpack": "~1.8",
+    "babel-loader": "~5.0",
+    "script-loader": "0.6",
+    "style-loader": "~0.12",
+    "css-loader": "~0.12",
+    "sass-loader": "~0.6",
+    "node-sass": "~2.1"
+  }
+}
