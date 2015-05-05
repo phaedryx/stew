@@ -1,5 +1,6 @@
 require 'sinatra'
+require 'tilt/erubis'
 
 get '/' do
-  "Hello World!"
+  erb :index
 end
