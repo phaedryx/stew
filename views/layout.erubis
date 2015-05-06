@@ -7,6 +7,19 @@
   <script src="js/head.js"></script>
 </head>
 <body>
+  <div class="row">
+    <div class="large-6 columns">
+      <h1>Test</h1>
+    </div>
+    <div class="large-6 columns">
+      <p>
+        An example
+      </p>
+    </div>
+  </div>
+  <div class="row">
+
+  </div>
   <%= yield %>
   <script src="js/application.js"></script>
 </body>

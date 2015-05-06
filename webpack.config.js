@@ -14,11 +14,21 @@ module.exports = {
     filename: "[name].js",
     chunkFilename: "[chunkhash].js"
   },
+  alias: {
+    foundation: "../node_modules/foundation-sites"
+  },
   module: {
     loaders: [
       { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
       { test: /\.scss$/, loader: "style!css!sass?includePaths[]=./node_modules/foundation-sites/scss/" },
       { test: /\.css$/, loader: "style-loader!css-loader"}
     ]
-  }
+  },
+  plugins: [
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+      "window.jQuery": "jquery"
+    })
+  ]
 }
