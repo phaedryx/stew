@@ -19,9 +19,10 @@ module.exports = {
   },
   module: {
     loaders: [
-      { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
+      { test: /\.js$/,   loader: "babel-loader", exclude: /node_modules/ },
+      { test: /\.jsx$/,  loader: 'jsx-loader?insertPragma=React.DOM&harmony'},
       { test: /\.scss$/, loader: "style!css!sass?includePaths[]=./node_modules/foundation-sites/scss/" },
-      { test: /\.css$/, loader: "style-loader!css-loader"}
+      { test: /\.css$/,  loader: "style-loader!css-loader"}
     ]
   },
   plugins: [

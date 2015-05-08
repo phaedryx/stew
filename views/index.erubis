@@ -1,2 +1,1 @@
-Hello World!<br>
-Current time: <%= Time.now.strftime("%I:%M:%S") %>
+<div id="page"></div>
